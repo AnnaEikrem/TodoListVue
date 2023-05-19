@@ -1,6 +1,6 @@
 <!-- Input Field component -->
 <template>
-	<!-- Added form and label for better accessibility, even just for a todo list -->
+	<!-- Form and label for better accessibility -->
 	<form @submit.prevent="addTask">
 		<label 
 			class="task__input--label"
@@ -8,16 +8,16 @@
 			New Task
 		</label>
 
-		<input 
-			class="task__input--value"
-			v-model="newTask" 
-			type="text" 
-			placeholder="Enter a new task"
-			id="newTaskInput">
-
-		<add-button 
-			@click="addTask">
-		</add-button>
+			<input 
+				class="task__input--value"
+				v-model="newTask" 
+				type="text" 
+				placeholder="Enter a new task"
+				id="newTaskInput">
+	
+			<add-button 
+				@click="addTask">
+			</add-button>
 	</form>
 </template>
 
@@ -50,10 +50,16 @@
 		flex-direction: column;
 	}
 
+	/* .task__list--top {
+		display: flex;
+		flex-direction: column;
+	} */
+
 	.task__input--label {
 		margin: var(--margin-small);
 		text-align: center;
 		font-size: 1.4rem;
+		font-weight: 600;
 	}
 	.task__input--value {
 		margin: var(--margin-small);

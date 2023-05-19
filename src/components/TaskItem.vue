@@ -17,9 +17,9 @@
 			</done-button>
 		</div>
 	</li>
-	</template>
+</template>
 
-	<script>
+<script>
 	import DeleteButton from './DeleteButton.vue';
 	import DoneButton from './DoneButton.vue';
 
@@ -28,12 +28,6 @@
 		DeleteButton,
 		DoneButton
 	},
-	// data() {
-	// 	return {
-	// 		done: this.task.done,
-	// 	}
-	// }
-	
 	props: {
 		task: {
 			type: Object,
@@ -53,9 +47,9 @@
 		}
 	}
 	};
- </script>
+</script>
  
- <style>
+<style>
 	.task__item {
 	display: flex;
 	align-items: center;
@@ -66,9 +60,10 @@
 	background-color: var(--color-light);
 	}
 
+	/* Style for tasks that is marked as Done */
   .task__item--done {
-    /* Styles for task item when marked as done */
     text-decoration: line-through;
+	 background: rgb(205, 61, 61);
     opacity: 0.6;
   }
  </style>

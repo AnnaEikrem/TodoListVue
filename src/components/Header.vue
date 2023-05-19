@@ -1,7 +1,9 @@
 <!-- Header component -->
 <template>
 	<header class="header__container">	
-		<h1 class="header__headline"> {{ headline }} </h1>
+		<h1 class="header__headline"> 
+			{{ headline }} 
+		</h1>
 	</header>
 </template>
 
@@ -9,7 +11,7 @@
 	export default {
 		data() {
 			return {
-				headline: 'Lots todo this summer?'
+				headline: 'Plan ahead'
 			}
 		}
 	}

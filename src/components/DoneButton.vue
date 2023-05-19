@@ -1,7 +1,4 @@
 <!-- Delete Button component -->
-<!-- @click="$emit('click')">
-{{ done ? 'Not done' : 'Done' }} -->
-
 <template>
 	<button 
 		class="done__task--button" 
