@@ -7,7 +7,7 @@
 
 		<task-item
 			v-for="task in sortedTasks"
-			:key="task.text"
+			:key="task.id"
 			:task="task"
 			:done="task.done"
 			@task-removed="removeTask"
