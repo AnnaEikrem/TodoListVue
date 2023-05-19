@@ -26,6 +26,7 @@
 			}
 		},
 		computed: {
+		// Sorts tasks alphabetically
 			sortedTasks() {
 				return this.tasks.sort((a, b) => {
 					const taskA = a.text.toLowerCase();

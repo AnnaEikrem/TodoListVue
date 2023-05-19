@@ -12,10 +12,9 @@ The application has the following features:
 - CSS
 - Vue.js
 
-## Demo 
-See the demo of [The Todo List ()]
-
 ### Remarks
-@todo: Implement the application with 'localStorage'. 
+@todo: Implement the application with 'localStorage'.
+@todo: Create Netlify demo. 
+@todo: Add more functionalities (date, time).  
 
 A small project, but decided to divide the application in to components. 
