@@ -2,7 +2,7 @@
 <template>
 	<Header></Header>
 
-	<section
+	<main
 		class="task__list--section">
 		<input-field 
 			@task-added="addTask">
@@ -13,19 +13,23 @@
 			@task-removed="removeTask"
 			@toggle-task="toggleTask">
 		</task-list>
-	</section>
+	</main>
+
+	<Footer></Footer>
 </template>
 
 <script>
 	import Header from '../components/Header.vue';
 	import InputField from '../components/InputField.vue';
 	import TaskList from '../components/TaskList.vue';
+	import Footer from '../components/Footer.vue';
 
 	export default {
 		components: {
 			Header,
 			InputField,
-			TaskList
+			TaskList,
+			Footer
 		},
 		data() {
 			return {
@@ -46,8 +50,6 @@
 			}
 		},
 			// Toggles class to mark as Done/not Done
-//@task-toggled="toggleTask">
-
 			toggleTask(task) {
 				task.done = !task.done;
 			}
