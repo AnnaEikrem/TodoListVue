@@ -5,8 +5,9 @@
 			v-for="task in sortedTasks"
 			:key="task.text"
 			:task="task"
+			:done="task.done"
 			@task-removed="removeTask"
-			@toggle-done="toggleDone(task)">
+			@update:done="toggleTask(task, $event)">
 		</task-item>
 	</ul>
 </template>
@@ -38,12 +39,9 @@
 		removeTask(task) {
 			this.$emit('task-removed', task);
 		},
-		toggleDone(task) {
-			task.done = !task.done
+		toggleTask(task, updatedDone) {
+			task.done = updatedDone;
 		}
-		// toggleDone(task) {
-		// 	this.$emit('toggle-done', task);
-		// 	}
 		}
 	};
 </script>

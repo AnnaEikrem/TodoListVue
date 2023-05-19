@@ -1,8 +1,12 @@
 <!-- Delete Button component -->
+<!-- @click="$emit('click')">
+{{ done ? 'Not done' : 'Done' }} -->
+
 <template>
 	<button 
-		class="done__task--button"
-		@click="$emit('click')">{{ done ? 'Not done' : 'Done' }}
+		class="done__task--button" 
+		@click="toggleDone">
+		{{  done ? 'Not done' : 'Done' }}
 	</button>
 </template>
 
@@ -12,6 +16,11 @@
 			done: {
 				type: Boolean,
 				required: true
+			}
+		},
+		methods: {
+			toggleDone() {
+				this.$emit('update:done', !this.done);
 			}
 		}
 	};

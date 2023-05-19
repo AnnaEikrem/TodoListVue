@@ -11,7 +11,7 @@
 		<task-list
 			:tasks="tasks"
 			@task-removed="removeTask"
-			@task-toggled="toggleTask">
+			@toggle-task="toggleTask">
 		</task-list>
 	</section>
 </template>

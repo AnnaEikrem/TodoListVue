@@ -1,9 +1,9 @@
 <template>
-	<li class="task__item">
-		<!-- Span styling marks Done/Not Done -->
+	<li class="task__item" 
+		:class="{ 'task__item--done' : done }">
 		<span 
-			class="task__item--text"
-			:class="{ done: task.done }">{{ task.text }}
+			class="task__item--text">
+			{{ task.text }}
 		</span>
 
 		<div class="task__item--buttons">
@@ -12,8 +12,8 @@
 			</delete-button>
 	
 			<done-button 
-				:done="task.done"
-				@click="toggleDone">
+				:done="done"
+				@update:done="toggleDone">
 			</done-button>
 		</div>
 	</li>
@@ -28,18 +28,28 @@
 		DeleteButton,
 		DoneButton
 	},
+	// data() {
+	// 	return {
+	// 		done: this.task.done,
+	// 	}
+	// }
+	
 	props: {
 		task: {
 			type: Object,
 			required: true
-		}
+		},
+		done: {
+			type: Boolean,
+			required: true,
+		},
 	},
 	methods: {
 		removeTask() {
 			this.$emit('task-removed', this.task);
 		},
 		toggleDone() {
-			this.$emit('toggle-done');
+			this.$emit('update:done', !this.done)
 		}
 	}
 	};
@@ -56,8 +66,9 @@
 	background-color: var(--color-light);
 	}
 
-	.done {
-	text-decoration: line-through;
-	color: gray;
-	}
+  .task__item--done {
+    /* Styles for task item when marked as done */
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
  </style>
