@@ -1,0 +1,13 @@
+:root {
+	--margin-basic: 1rem;
+	--margin-small: 0.5rem;
+	--padding-basic: 1rem;
+	--padding-small: 0.5rem;
+
+	--color-primary: #FF6F61;
+	--color-secondary: #6AB8BF;
+	--color-button: #A3D9A5;
+	--color-background: #FFD166;
+	--color-light: #F7F7F7;
+	--color-dark: #333333;
+}
