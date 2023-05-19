@@ -13,6 +13,6 @@ The application has the following features:
 - Vue.js
 
 ### Remarks
-@todo: Implement the application with 'localStorage'.
-@todo: Create Netlify demo. 
-@todo: Add more functionalities (date, time, edit task).  
+- todo: Implement the application with 'localStorage'.
+- todo: Create Netlify demo. 
+- todo: Add more functionalities (date, time, edit task).  
