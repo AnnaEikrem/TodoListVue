@@ -5,7 +5,7 @@ The 'Todo list' is a simple application made with vue.js, where you can keep tra
 The application has the following features: 
 - Add and delete tasks.
 - Mark the tasks as done/undone.
-- The task items are sorted alphabetically (ASC / DESC). 
+- The task items can be sorted in ASC and DESC order. 
 
 ## Technologies used
 - HTML
@@ -15,6 +15,4 @@ The application has the following features:
 ### Remarks
 @todo: Implement the application with 'localStorage'.
 @todo: Create Netlify demo. 
-@todo: Add more functionalities (date, time).  
-
-A small project, but decided to divide the application in to components. 
+@todo: Add more functionalities (date, time, edit task).  
