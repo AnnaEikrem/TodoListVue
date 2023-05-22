@@ -13,7 +13,7 @@ The application has the following features:
 - Vue.js
 
 ## Demo
-View the [Todo list](https://todolist-application-app.netlify.app/)
+View the demo here of the [Todo list](https://todolist-application-vue.netlify.app/) 
 
 ### Remarks
 - todo: Implement the application with 'localStorage'.
