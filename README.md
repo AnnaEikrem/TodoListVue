@@ -12,6 +12,9 @@ The application has the following features:
 - CSS
 - Vue.js
 
+## Demo
+View the [Todo list](https://todolist-application-app.netlify.app/)
+
 ### Remarks
 - todo: Implement the application with 'localStorage'.
 - todo: Create Netlify demo. 
