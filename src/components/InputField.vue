@@ -49,12 +49,7 @@
 		display: flex;
 		flex-direction: column;
 	}
-
-	/* .task__list--top {
-		display: flex;
-		flex-direction: column;
-	} */
-
+	
 	.task__input--label {
 		margin: var(--margin-small);
 		text-align: center;
